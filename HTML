@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04 - Alarme!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2>Meu alarme com Java Script!</h2>
+    <div>
+        <label for="horas">Hora</label>
+        <input type="number" name="horas" id="horas" max="24" min="0" required>
+    </div>
+    <div>
+        <label for="minutos">Minutos</label>
+        <input type="number" name="minutos" id="minutos" max="60" min="0">
+    </div>
+    <div>
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" cols="4" required></textarea>
+    </div>
+    <button id="ativar" onclick="alarme">Ativar</button>
+</body>
+
+</html>
