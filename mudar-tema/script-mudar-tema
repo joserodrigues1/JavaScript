@@ -1,5 +1,5 @@
 function mudarTema(){
-    let body = document.getElementById('body');
+    let body = document.getElementsByTagName('body')[0];
     
     if(body.classList.contains('dark-mode')){
         body.classList.remove('dark-mode')
@@ -7,6 +7,18 @@ function mudarTema(){
     else{
         body.classList.add('dark-mode')
     }
-    
+}
+
+let items = document.getElementsByClassName('task-item');
+for(let i = 0; i < items.length; i++){
+    console.log(items[i].textContent);
+    items[i].addEventListener('click', () => {
+        if(items[i].classList.contains('completed')){
+            items[i].classList.remove('completed')
+        }
+        else{
+            items[i].classList.add('completed')
+        }
+    })
     
 }
